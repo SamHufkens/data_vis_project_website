@@ -33,7 +33,7 @@ const HomePage = () => {
         sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
       ></iframe>
       ),
-      link_to_dataset: "/public/dataset+metadata.zip",
+      link_to_dataset: "https://drive.google.com/file/d/1pCSezlJmi1oEu9icgm-IVzZVUADN1Tks/view?usp=sharing",
       link_to_protocol: "/protocol1",
     },
     {
@@ -50,7 +50,7 @@ const HomePage = () => {
         sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
       ></iframe>
       ),
-      link_to_dataset: "/public/dataset+metadata.zip",
+      link_to_dataset: "https://drive.google.com/file/d/1pCSezlJmi1oEu9icgm-IVzZVUADN1Tks/view?usp=sharing",
       link_to_protocol: "/protocol2",
     },
     {
@@ -67,7 +67,7 @@ const HomePage = () => {
         sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
         ></iframe>
       ),
-      link_to_dataset: "/public/dataset+metadata.zip",
+      link_to_dataset: "https://drive.google.com/file/d/1pCSezlJmi1oEu9icgm-IVzZVUADN1Tks/view?usp=sharing",
       link_to_protocol: "/protocol3",
     },
     {
@@ -84,7 +84,7 @@ const HomePage = () => {
         sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
         ></iframe>
       ),
-      link_to_dataset: "/public/dataset+metadata.zip",
+      link_to_dataset: "https://drive.google.com/file/d/1pCSezlJmi1oEu9icgm-IVzZVUADN1Tks/view?usp=sharing",
       link_to_protocol: "/protocol4",
     }
   ]

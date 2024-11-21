@@ -23,7 +23,7 @@ const VisualizationSection = ({title, text, visualization, link_to_dataset, link
         <p className="text-xs italic">{caption}</p>
         <div className="flex items-center gap-6 text-sm mt-2">
           <a href={link_to_protocol} className="hover:underline">Visualization Protocol</a>
-          <a href={link_to_dataset} download="dataset+metadata.zip" className="hover:underline">Dataset</a>
+          <a href={link_to_dataset} className="hover:underline">Dataset</a>
         </div>
         <div className="mt-6">
           {text}
