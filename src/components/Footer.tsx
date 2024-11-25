@@ -13,9 +13,9 @@ const Footer = () => {
                 </p>
                 <div className="mt-2">
                     <p>Sam Hufkens</p>
-                    <p>Kadir</p>
-                    <p>Jorge</p>
-                    <p>Ylias</p>
+                    <p>Kadir Özden</p>
+                    <p>Jorge Garcia</p>
+                    <p>Ilyas Qasemzada</p>
                 </div>
             </div>
             <div>

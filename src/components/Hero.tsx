@@ -20,7 +20,7 @@ const Hero = () => {
             <p className='my-5 text-sm md:text-lg opacity-75 z-10'>
                 An In-Depth Analysis of Factors Influencing <br /> The Box Office from 1920 to 2020
             </p>
-            <p className='text-sm md:text-md mb-5 z-10'>By Sam Hufkens, Kadir, Jorge, Ylias</p>
+            <p className='text-sm md:text-md mb-5 z-10'>By Sam, Kadir, Jorge, Ilyas</p>
             <div className='md:flex md:justify-center z-10'> 
                 <a href='#intro'>
                     <button type="button" className="flex items-center gap-2 text-white bg-primary hover:bg-blue-500 transition font-medium rounded text-sm px-5 py-2.5 me-2 mb-2">

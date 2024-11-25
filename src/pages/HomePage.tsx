@@ -39,7 +39,7 @@ const HomePage = () => {
     {
       id:"vis2",
       title: "Genres and Directors",
-      text: "Action and Adventure movies have dominated the box office from 2000 to 2023, generating the highest total revenue. In the Action genre, top-performing directors include Jon Watts and Zack Snyder. For Adventure films, the Russo Brothers lead, likely due to their success with the Avengers franchise, followed by Peter Jackson, known for The Lord of the Rings and The Hobbit series. Some directors, like Christopher Nolan, stand out for their versatility, excelling across multiple genres such as Action, Adventure, and Drama. Family-friendly animated movies directed by Carlos Soldanha, demonstrate substantial popularity. The same for Tod Phillips in comedy movies.",
+      text: "Adventure and Action movies have dominated the box office from 2000 to 2023, generating the highest average revenue. In the Adventure genre, top-performing directors include Anthony Russo and Joe Russo, likely due to their success with the Avengers franchise, followed by J.J. Abrams. For Action films, James Cameron leads, reflecting the impact of blockbuster hits like 'Avatar', along with notable directors like Colin Trevorrow and Jon Watts. Some directors, like Peter Jackson, stand out for their versatility, excelling across multiple genres such as Adventure, Action, and Fantasy. Family-friendly animated movies directed by Michael Jelenic and Aaron Horvath demonstrate substantial popularity, similarly for Jennifer Lee and Chris Buck. In Comedy, Greta Gerwig and Phyllida Lloyd achieve significant success, showcasing the genre's strong performance.",
       caption:"This treemap highlights the influence of key genres and directors.",
       visualization: (
         <iframe
@@ -56,8 +56,8 @@ const HomePage = () => {
     {
       id:"vis3",
       title: "Best Month to Release a Movie",
-      text: "To achieve high box office revenue, July is the optimal month for releasing a movie. If July isn’t an option, December and June are also excellent choices. However, releasing a movie in January might not be the best strategy if maximizing box office revenue is the primary goal.",
-      caption:"This bar chart shows all the months with their avgerage box office from 2000 to 2023.",
+      text: "The chart highlights that May has the highest box office revenues, with significant contributions from genres like Action and Adventure. June and July also show strong performance, benefiting from the summer movie season. January has the lowest average box office revenue, indicating it might not be the ideal month for releases aimed at high financial returns.",
+      caption:"This bar chart shows all the months with their avgerage box office combined with genres from 2000 to 2023.",
       visualization: (
         <iframe
         src="https://flo.uri.sh/visualisation/20395126/embed"
