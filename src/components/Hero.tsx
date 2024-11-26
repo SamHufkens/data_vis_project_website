@@ -18,7 +18,7 @@ const Hero = () => {
                 Analyzing Factors Influencing <br /> the <span className='text-primary'>Box Office</span> of a Movie
             </h1>
             <p className='my-5 text-sm md:text-lg opacity-75 z-10'>
-                An In-Depth Analysis of Factors Influencing <br /> The Box Office from 1920 to 2020
+                An In-Depth Analysis of Factors Influencing <br /> The Box Office from 2000 to 2023
             </p>
             <p className='text-sm md:text-md mb-5 z-10'>By Sam, Kadir, Jorge, Ilyas</p>
             <div className='md:flex md:justify-center z-10'> 
