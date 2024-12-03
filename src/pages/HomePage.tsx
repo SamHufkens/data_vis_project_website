@@ -56,7 +56,7 @@ const HomePage = () => {
     {
       id:"vis3",
       title: "Best Month to Release a Movie",
-      text: "The chart highlights that May has the highest box office revenues, with significant contributions from genres like Action and Adventure. June and July also show strong performance, benefiting from the summer movie season. January has the lowest average box office revenue, indicating it might not be the ideal month for releases aimed at high financial returns.",
+      text: "The chart highlights that June has the highest box office revenues, with significant contributions from genres like Action and Adventure. June and July also show strong performance, benefiting from the summer movie season. January has the lowest average box office revenue, indicating it might not be the ideal month for releases aimed at high financial returns.",
       caption:"This bar chart shows all the months with their avgerage box office combined with genres from 2000 to 2023.",
       visualization: (
         <iframe
