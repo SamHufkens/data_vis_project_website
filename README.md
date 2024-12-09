@@ -21,6 +21,7 @@ To identify the primary factors influencing box office performance, we addressed
 2.	What is the best month to release a movie?
 3.	Does a movie's budget influence its box office performance?
 4.	What is the evolution of total box office revenue from 2000 to 2023?
+
 This project is designed for film industry professionals, including directors, producers, and investors. By focusing on genre profitability, director impact, and budget dynamics, the findings aim to support strategic decision-making in movie production and marketing.
 We utilized the TMDB Movies dataset, containing 28 variables, and filtered the data to include movies released between 2000 and 2023. Preprocessing involved selecting relevant features, handling missing data, and simplifying genre classification. After filtering, the dataset included 39,189 records with features such as title, budget, revenue, director, and genre.
 The goal of this project is to provide insights into the factors influencing box office success, enabling professionals to optimize movie production.
@@ -39,8 +40,27 @@ We preprocessed our data with python using the pandas library. The first thing w
 ```Python
 import pandas as pd
 
-df = pd.read_csv('file.tsv', sep='\t')
-print(df.columns)
+DATA_PATH = "./TMDB_all_movies.csv"
+df = pd.read_csv(DATA_PATH)
+df = df[["title", "runtime", "vote_average", "vote_count", "release_date", "budget", "popularity", "genres", "director", "cast", "revenue"]]
+
+# Remove rows with missing values
+df = df.dropna()
+
+# Extract primary genre from genres
+df['Genre'] = df['genres'].apply(lambda x: x.split(',')[0])
+df = df.drop(columns=["genres"])
+
+# Convert release_date to datetime format and extract year
+df['release_date'] = pd.to_datetime(df['release_date'])
+df['release_year'] = df['release_date'].dt.year
+
+# Filter data for the specified years and non-zero budgets or revenues
+df = df[(df['release_year'] >= 2000) & (df['release_year'] <= 2023)]
+df = df[(df['budget'] != 0) | (df['revenue'] != 0)]
+
+# Remove rows where runtime is 0.0
+df = df[df['runtime'] != 0.0]
 ```
 
 ## Data visualizations
@@ -48,22 +68,22 @@ print(df.columns)
 ### The evolution of the box office from 2000 to 2023 
 From 2000 to 2023, the box office has a steady increase. There are some significant spikes, like for example in 2009 with the release of ‘Avatar’ which is the highest-grossing movie of all time. There is a sharp decline due to Covid-19, because theaters were closed, but there was a rapid recovery as theaters reopened from 2021 onwards. Overall the trends indicates growing interest in movies
 
-[<img src="assets/evolution.png" width="800" alt="Placeholder image">]()
+![alt text](public/assets/evolution.png)
 
 ### Genres and Directors
 Adventure and Action movies have dominated the box office from 2000 to 2023, generating the highest average revenue. In the Adventure genre, top-performing directors include Anthony Russo and Joe Russo, likely due to their success with the Avengers franchise, followed by J.J. Abrams. For Action films, James Cameron leads, reflecting the impact of blockbuster hits like 'Avatar', along with notable directors like Colin Trevorrow and Jon Watts. Some directors, like Peter Jackson, stand out for their versatility, excelling across multiple genres such as Adventure, Action, and Fantasy. Family-friendly animated movies directed by Michael Jelenic and Aaron Horvath demonstrate substantial popularity, similarly for Jennifer Lee and Chris Buck. In Comedy, Greta Gerwig and Phyllida Lloyd achieve significant success, showcasing the genre's strong performance.
 
-[<img src="assets/genres_and_directors.png" width="800" alt="Placeholder image">]()
+![alt text](public/assets/genres_and_directors.png)
 
 ### Best Month to Release a Movie
 The chart highlights that June has the highest box office revenues, with significant contributions from genres like Action and Adventure. June and July also show strong performance, benefiting from the summer movie season. January has the lowest average box office revenue, indicating it might not be the ideal month for releases aimed at high financial returns.
 
-[<img src="assets/best_month.png" width="800" alt="Placeholder image">]()
+![alt text](public/assets/best_month.png)
 
 ### Budget vs Box Office
 There is a positive correlation between budget and box office, indicating that movies with higher budgets tend to generate higher revenues. This suggests that substantial investments could lead to significant returns, but this is not always the case (Joker 2, Red One, …). There are also a few outliers who have high revenue compared to their low budget.
 
-[<img src="assets/budget_vs_gross.png" width="800" alt="Placeholder image">]()
+![alt text](public/assets/budget_vs_gross.png)
 
 ## Key findings
 **Evolution from 2000 to 2023**
@@ -79,8 +99,11 @@ Adventure, Action, Animation, Comedy, and Drama were identified as the top-perfo
 There is a positive correlation between a movie's budget and its box office revenue, indicating that higher-budget films generally earn more. However, the variability within this trend highlights the inherent risks and the potential for lower-budget films to achieve substantial success if they resonate well with audiences.
 
 **Recommendations for producers**
+
 •	Focus movie releases in May, June, and July to capitalize on high box office revenue during the summer movie season. Avoid releasing movies in January, as it has historically shown the lowest average revenue. 
+
 •	Prioritize producing movies in Adventure, Action, Animation, Comedy, and Drama genres, as these have consistently generated high box office returns. Collaborate with top-performing directors within these genres to leverage their successful track records.
+
 •	Investing heavily in a movie's budget can significantly boost its box office potential. However, historical data shows that higher budgets don't always guarantee success, as other factors like marketing and audience reception also play crucial roles. 
 
 
