@@ -22,7 +22,7 @@ const HomePage = () => {
     {
       id:"vis1",
       title: "Box Office Evolution from 2000 to 2023",
-      text: "From 2000 to 2023, the box office has a steady increase. There are some significant spikes, like for example in 2009 with the release of ‘Avatar’ which is the highest-grossing movie of all time. There is a sharp decline due to Covid-19, because theaters were closed, but there was a rapid recovery as theaters reopened from 2021 onwards. Overall the trends indicates growing interest in movies.",
+      text: "There is a general upward trend until 2019, reflecting steady growth and the impact of blockbuster releases like 'Avatar'. The sharp decline in 2020 due to the Covid-19 pandemic highlights the industry's vulnerability to global events. However, the recovery from 2021 onwards demonstrates the industry's resilience, with revenues returning to pre-pandemic levels by 2023.",
       caption:"This graph shows box office trends from 2000 to 2023.",
       visualization: (
         <iframe
@@ -38,8 +38,8 @@ const HomePage = () => {
     },
     {
       id:"vis2",
-      title: "Genres and Directors",
-      text: "Adventure and Action movies have dominated the box office from 2000 to 2023, generating the highest average revenue. In the Adventure genre, top-performing directors include Anthony Russo and Joe Russo, likely due to their success with the Avengers franchise, followed by J.J. Abrams. For Action films, James Cameron leads, reflecting the impact of blockbuster hits like 'Avatar', along with notable directors like Colin Trevorrow and Jon Watts. Some directors, like Peter Jackson, stand out for their versatility, excelling across multiple genres such as Adventure, Action, and Fantasy. Family-friendly animated movies directed by Michael Jelenic and Aaron Horvath demonstrate substantial popularity, similarly for Jennifer Lee and Chris Buck. In Comedy, Greta Gerwig and Phyllida Lloyd achieve significant success, showcasing the genre's strong performance.",
+      title: "Influence of Genres and Directors",
+      text: "High-earning genres like Action, Adventure, and Family consistently bring in large audiences and substantial revenues. Top directors in these genres, such as James Cameron for Action and the Russo brothers for Adventure, show that well-known directors can boost box office success. Similarly, family films directed by Chris Buck and Jennifer Lee, and animated films by directors like Kyle Balda, highlight the financial potential of these genres. Even in Comedy, directors like Greta Gerwig show that this genre can achieve significant earnings. Overall, both the genre and the reputation of directors play crucial roles in attracting large audiences and driving box office earnings.",
       caption:"This treemap highlights the influence of key genres and directors.",
       visualization: (
         <iframe
@@ -56,7 +56,7 @@ const HomePage = () => {
     {
       id:"vis3",
       title: "Best Month to Release a Movie",
-      text: "The chart highlights that June has the highest box office revenues, with significant contributions from genres like Action and Adventure. June and July also show strong performance, benefiting from the summer movie season. January has the lowest average box office revenue, indicating it might not be the ideal month for releases aimed at high financial returns.",
+      text: "The box office revenue from 2000 to 2023 shows clear seasonal trends, with significant peaks during summer (May to July) and the holiday season (November and December). These times coincide with school vacations and holidays, leading to higher movie attendance. Action, adventure and Animation are genres that dominate the box office, almost every month. Monthly revenue variations show lower earnings in January and February, an increase in March and April due to spring break, and a decline in August and September post-summer. October sees a slight uptick, maybe because of Halloween.",
       caption:"This bar chart shows all the months with their avgerage box office combined with genres from 2000 to 2023.",
       visualization: (
         <iframe
@@ -73,7 +73,7 @@ const HomePage = () => {
     {
       id:"vis4",
       title: "Budget vs Box Office",
-      text: "There is a positive correlation between budget and box office, indicating that movies with higher budgets tend to generate higher revenues. This suggests that substantial investments could lead to significant returns, but this is not always the case (Joker 2, Red One, …). There are also a few outliers who have high revenue compared to their low budget.",
+      text: "There is a positive correlation between a movie's budget and its box office revenue, indicating that higher-budget films generally earn more. However, the variability within this trend highlights the inherent risks and the potential for lower-budget films to achieve substantial success if they resonate well with audiences.",
       caption:"This scatter plot shows the relation between director's experience and box office",
       visualization: (
         <iframe

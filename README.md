@@ -76,7 +76,7 @@ We also wanted to analyze which genre is the most popular and identify the most 
 ![alt text](public/assets/genres_and_directors.png)
 
 ### Best Month to Release a Movie
-Another important factor to consider is identifying the best month to release a movie and determining which genres perform the best during that time. To explore this, we created a new variable called "month" based on the release date. Different colors were used to represent genres, ensuring consistency by using the same color scheme as in the previous visualization.
+Another important factor to consider is identifying the best month to release a movie and determining which genres perform the best during that time. To explore this, we created a new variable called "month" based on the release date. Different colors were used to represent genres, ensuring consistency by using the same color scheme as in the previous visualization. We had many unique genres, but some contributed very little to the overall analysis. To simplify the visualization, we grouped these less impactful genres under the "Other" category.
 
 ![alt text](public/assets/best_month.png)
 
@@ -88,15 +88,19 @@ We wanted to see if a movie’s budget affects its box office performance, so we
 
 ## Key findings
 **Evolution from 2000 to 2023**
-experienced a general upward trend until 2019, reflecting steady growth and the impact of blockbuster releases like "Avatar." The sharp decline in 2020 due to the Covid-19 pandemic highlights the industry's vulnerability to global events. However, the recovery from 2021 onwards demonstrates the industry's resilience, with revenues returning to pre-pandemic levels by 2023.
+
+There is a general upward trend until 2019, reflecting steady growth and the impact of blockbuster releases like "Avatar." The sharp decline in 2020 due to the Covid-19 pandemic highlights the industry's vulnerability to global events. However, the recovery from 2021 onwards demonstrates the industry's resilience, with revenues returning to pre-pandemic levels by 2023.
 
 **Best Month To Release a Movie**
-May emerged as the optimal month for movie releases, achieving the highest average box office revenue. The early summer period significantly boosts audience attendance. June and July also show strong performance, benefiting from the summer movie season.
+
+The box office revenue from 2000 to 2023 shows clear seasonal trends, with significant peaks during summer (May to July) and the holiday season (November and December). These times coincide with school vacations and holidays, leading to higher movie attendance. Action, adventure and Animation are genres that dominate the box office, almost every month. Monthly revenue variations show lower earnings in January and February, an increase in March and April due to spring break, and a decline in August and September post-summer. October sees a slight uptick, maybe because of Halloween.
 
 **Influence of Genres and Directors**
-Adventure, Action, Animation, Comedy, and Drama were identified as the top-performing genres. Directors like Anthony Russo & Joe Russo (Adventure), James Cameron (Action), Michael Jelenic & Aaron Horvath (Animation), and Greta Gerwig (Comedy) consistently achieved high box office success within these genres.
+
+High-earning genres like Action, Adventure, and Family consistently bring in large audiences and substantial revenues. Top directors in these genres, such as James Cameron for Action and the Russo brothers for Adventure, show that well-known directors can boost box office success. Similarly, family films directed by Chris Buck and Jennifer Lee, and animated films by directors like Kyle Balda, highlight the financial potential of these genres. Even in Comedy, directors like Greta Gerwig show that this genre can achieve significant earnings. Overall, both the genre and the reputation of directors play crucial roles in attracting large audiences and driving box office earnings.
 
 **Budget Influence on Box Office**
+
 There is a positive correlation between a movie's budget and its box office revenue, indicating that higher-budget films generally earn more. However, the variability within this trend highlights the inherent risks and the potential for lower-budget films to achieve substantial success if they resonate well with audiences.
 
 **Recommendations for producers**
