@@ -3,7 +3,7 @@ Data Visualization course, M-D3202E
 Teacher Giovanni Profeta
 
 
-# Project title
+# Analyzing Factors Influencing the Box Office of a Movie
 Authors: Sam Hufkens, Kadir Özden, Jorge Garcia, Ilyas Qasemzada
 
 [Analyzing Factors Influencing
