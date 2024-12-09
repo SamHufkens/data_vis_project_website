@@ -65,23 +65,24 @@ df = df[df['runtime'] != 0.0]
 
 ## Data visualizations
 
-### The evolution of the box office from 2000 to 2023 
-From 2000 to 2023, the box office has a steady increase. There are some significant spikes, like for example in 2009 with the release of ‘Avatar’ which is the highest-grossing movie of all time. There is a sharp decline due to Covid-19, because theaters were closed, but there was a rapid recovery as theaters reopened from 2021 onwards. Overall the trends indicates growing interest in movies
+### The Evolution of the Box Office from 2000 to 2023 
+To illustrate the evolution of the box office over time, we used a line graph and show the total box office for each year, as it effectively highlights trends. We added annotations to emphasize significant events between 2000 and 2023. Additionally, we included a prefix in the labels to clarify that the values represent monetary amounts, specifically in US dollars.
 
 ![alt text](public/assets/evolution.png)
 
-### Genres and Directors
-Adventure and Action movies have dominated the box office from 2000 to 2023, generating the highest average revenue. In the Adventure genre, top-performing directors include Anthony Russo and Joe Russo, likely due to their success with the Avengers franchise, followed by J.J. Abrams. For Action films, James Cameron leads, reflecting the impact of blockbuster hits like 'Avatar', along with notable directors like Colin Trevorrow and Jon Watts. Some directors, like Peter Jackson, stand out for their versatility, excelling across multiple genres such as Adventure, Action, and Fantasy. Family-friendly animated movies directed by Michael Jelenic and Aaron Horvath demonstrate substantial popularity, similarly for Jennifer Lee and Chris Buck. In Comedy, Greta Gerwig and Phyllida Lloyd achieve significant success, showcasing the genre's strong performance.
+### Influence of Key Genres and Directors
+We also wanted to analyze which genre is the most popular and identify the most prominent directors within each genre. To visualize this, we created a treemap. Each genre was assigned a distinct color, which can be consistently applied across other visualizations. The size of the boxes in the treemap represents the influence of each genre and director, making it easy to compare their popularity and impact.
 
 ![alt text](public/assets/genres_and_directors.png)
 
 ### Best Month to Release a Movie
-The chart highlights that June has the highest box office revenues, with significant contributions from genres like Action and Adventure. June and July also show strong performance, benefiting from the summer movie season. January has the lowest average box office revenue, indicating it might not be the ideal month for releases aimed at high financial returns.
+Another important factor to consider is identifying the best month to release a movie and determining which genres perform the best during that time. To explore this, we created a new variable called "month" based on the release date. Different colors were used to represent genres, ensuring consistency by using the same color scheme as in the previous visualization.
 
 ![alt text](public/assets/best_month.png)
 
 ### Budget vs Box Office
-There is a positive correlation between budget and box office, indicating that movies with higher budgets tend to generate higher revenues. This suggests that substantial investments could lead to significant returns, but this is not always the case (Joker 2, Red One, …). There are also a few outliers who have high revenue compared to their low budget.
+
+We wanted to see if a movie’s budget affects its box office performance, so we created a scatter plot to show the relationship. To make it easier to see the data, we reduced the number of points and made them more transparent. We also labeled a few key movies to make the plot more informative.
 
 ![alt text](public/assets/budget_vs_gross.png)
 
