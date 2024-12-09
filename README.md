@@ -105,7 +105,7 @@ There is a positive correlation between a movie's budget and its box office reve
 
 **Recommendations for producers**
 
-•	Focus movie releases in May, June, and July to capitalize on high box office revenue during the summer movie season. Avoid releasing movies in January, as it has historically shown the lowest average revenue. 
+•	Focus on movie releases during the summer months (May to July) and the holiday season (November and December) to take advantage of the higher movie attendance during school vacations and holidays.
 
 •	Prioritize producing movies in Adventure, Action, Animation, Comedy, and Drama genres, as these have consistently generated high box office returns. Collaborate with top-performing directors within these genres to leverage their successful track records.
 
