@@ -38,6 +38,7 @@ function ProtocolPage4() {
                 <li>2. Dropped rows with missing values</li>
                 <li>3. Selected primary genre for each movie</li>
                 <li>4. Selected movies between the years 2000 and 2023 (included)</li>
+                <li>5. Dropped rows where runtime is 0.0</li>
             </ol>
           </div>
          

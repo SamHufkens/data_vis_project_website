@@ -38,8 +38,9 @@ function ProtocolPage2() {
                 <li>2. Dropped rows with missing values</li>
                 <li>3. Selected primary genre for each movie</li>
                 <li>4. Selected movies between the years 2000 and 2023 (included)</li>
-                <li>5. Selected top 5 genres and calculated sum of revenue for each genre</li>
-                <li>6. Selected top 10 directors for each genre and calculated sum for each director</li>
+                <li>5. Dropped rows where runtime is 0.0</li>
+                <li>6. Selected top 5 genres and calculated sum of revenue for each genre</li>
+                <li>7. Selected top 10 directors for each genre and calculated sum for each director</li>
               </ol>
             </div>
            
