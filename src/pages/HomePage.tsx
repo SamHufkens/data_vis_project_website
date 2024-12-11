@@ -9,6 +9,7 @@ import ConclusionSection from '../components/Conclusion'
 type Visualization = {
   id: string,
   title: string,
+  subtitle: string,
   text: string,
   caption: string,
   visualization: ReactNode | string,
@@ -22,6 +23,7 @@ const HomePage = () => {
     {
       id:"vis1",
       title: "Box Office Evolution from 2000 to 2023",
+      subtitle: "Box Office Revenue Trends (2000-2023)",
       text: "There is a general upward trend until 2019, reflecting steady growth and the impact of blockbuster releases like 'Avatar'. The sharp decline in 2020 due to the Covid-19 pandemic highlights the industry's vulnerability to global events. However, the recovery from 2021 onwards demonstrates the industry's resilience, with revenues returning to pre-pandemic levels by 2023.",
       caption:"This graph shows box office trends from 2000 to 2023.",
       visualization: (
@@ -39,6 +41,7 @@ const HomePage = () => {
     {
       id:"vis2",
       title: "Influence of Genres and Directors",
+      subtitle: "Top 5 Genres and Their Leading 10 Directors by Average Box Office",
       text: "High-earning genres like Action, Adventure, and Family consistently bring in large audiences and substantial revenues. Top directors in these genres, such as James Cameron for Action and the Russo brothers for Adventure, show that well-known directors can boost box office success. Similarly, family films directed by Chris Buck and Jennifer Lee, and animated films by directors like Kyle Balda, highlight the financial potential of these genres. Even in Comedy, directors like Greta Gerwig show that this genre can achieve significant earnings. Overall, both the genre and the reputation of directors play crucial roles in attracting large audiences and driving box office earnings.",
       caption:"This treemap highlights the influence of key genres and directors.",
       visualization: (
@@ -56,6 +59,7 @@ const HomePage = () => {
     {
       id:"vis3",
       title: "Best Month to Release a Movie",
+      subtitle: "Best Performing Genres by Month Based on Average Box Office Revenue",
       text: "The box office revenue from 2000 to 2023 shows clear seasonal trends, with significant peaks during summer (May to July) and the holiday season (November and December). These times coincide with school vacations and holidays, leading to higher movie attendance. Action, adventure and Animation are genres that dominate the box office, almost every month. Monthly revenue variations show lower earnings in January and February, an increase in March and April due to spring break, and a decline in August and September post-summer. October sees a slight uptick, maybe because of Halloween.",
       caption:"This bar chart shows all the months with their avgerage box office combined with genres from 2000 to 2023.",
       visualization: (
@@ -73,8 +77,9 @@ const HomePage = () => {
     {
       id:"vis4",
       title: "Budget vs Box Office",
+      subtitle: "Correlation Between Budget Experience and Box Office",
       text: "There is a positive correlation between a movie's budget and its box office revenue, indicating that higher-budget films generally earn more. However, the variability within this trend highlights the inherent risks and the potential for lower-budget films to achieve substantial success if they resonate well with audiences.",
-      caption:"This scatter plot shows the relation between director's experience and box office",
+      caption:"This scatter plot shows the relation between budget and box office",
       visualization: (
         <iframe
         src="https://flo.uri.sh/visualisation/20243560/embed"
@@ -95,6 +100,8 @@ const HomePage = () => {
       <div className="max-w-6xl mx-auto">
           <NavBar />
           <Hero />
+      </div>
+      <div className="max-w-4xl mx-auto">
           <div id='intro'>
             <IntroSection />
           </div>
@@ -102,7 +109,8 @@ const HomePage = () => {
             visualizations.map((vis: Visualization) => (
               <div id={vis.id}>
                   <VisualizationSection 
-                    title={vis.title} 
+                    title={vis.title}
+                    subtitle={vis.subtitle} 
                     text={vis.text} 
                     caption={vis.caption}
                     visualization={vis.visualization} 

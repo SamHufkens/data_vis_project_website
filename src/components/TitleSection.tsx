@@ -1,14 +1,17 @@
 
 
 type Props = {
-    title: string
+    title: string,
+    subtitle?: string
 }
 
-const TitleSection = ({title}: Props) => {
+const TitleSection = ({title, subtitle}: Props) => {
   return (
-    <div className="text-4xl">
-      {title}
+    <div>
+      <h1 className="text-4xl">{title}</h1>
+      <h3 className="my-2 text-gray-700 text-xl">{subtitle}</h3>
       <hr className="w-24 h-1 my-5 bg-primary border-0" />
+      
     </div>
   )
 }

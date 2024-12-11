@@ -3,7 +3,7 @@ import TitleSection from "./TitleSection"
 
 const IntroSection = () => {
   return (
-    <div className="mt-60">
+    <div className="mt-60 text-justify">
         <TitleSection title="Introduction"/>
         <p className="text-justify">
         In this project, we delve into the dynamics of the film industry by analyzing various factors that influence the box office performance of movies. Using the TMDB Movies dataset from Kaggle, which spans from 2000 to 2023 and includes 28 variables, our primary focus is on key determinants of a movie's success, as measured by its box office revenue.
