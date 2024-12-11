@@ -77,7 +77,7 @@ const HomePage = () => {
     {
       id:"vis4",
       title: "Budget vs Box Office",
-      subtitle: "Correlation Between Budget Experience and Box Office",
+      subtitle: "Correlation Between Budget and Box Office",
       text: "There is a positive correlation between a movie's budget and its box office revenue, indicating that higher-budget films generally earn more. However, the variability within this trend highlights the inherent risks and the potential for lower-budget films to achieve substantial success if they resonate well with audiences.",
       caption:"This scatter plot shows the relation between budget and box office",
       visualization: (
