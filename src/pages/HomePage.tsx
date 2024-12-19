@@ -78,7 +78,7 @@ const HomePage = () => {
       id:"vis4",
       title: "Budget vs Box Office",
       subtitle: "Correlation Between Budget and Box Office",
-      text: "There is a positive correlation between a movie's budget and its box office revenue, indicating that higher-budget films generally earn more. However, the variability within this trend highlights the inherent risks and the potential for lower-budget films to achieve substantial success if they resonate well with audiences.",
+      text: "Movies with lower budgets (less than $100M) dominate the High Success category, often achieving impressive ROI due to their smaller initial investments. Moderate-budget films ($150M–$300M) tend to break even or turn modest profits but rarely deliver exceptional ROI, as illustrated by titles like Ant-Man and the Wasp: Quantumania. High-budget films come with greater financial risk, though some notable exceptions, such as Avatar and Avengers: Endgame, manage to achieve both high revenue and strong ROI. Additionally, films like Joker highlight the potential for low-budget projects to generate significant financial success when paired with compelling storytelling and effective marketing strategies.",
       caption:"This scatter plot shows the relation between budget and box office",
       visualization: (
         <iframe

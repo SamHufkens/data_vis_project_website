@@ -59,6 +59,9 @@ df['release_year'] = df['release_date'].dt.year
 df = df[(df['release_year'] >= 2000) & (df['release_year'] <= 2023)]
 df = df[(df['budget'] != 0) | (df['revenue'] != 0)]
 
+# Remove rows where budget is 0.0
+df = df[df['budget'] != 0.0]
+
 # Remove rows where runtime is 0.0
 df = df[df['runtime'] != 0.0]
 ```
@@ -101,7 +104,7 @@ High-earning genres like Action, Adventure, and Family consistently bring in lar
 
 **Budget Influence on Box Office**
 
-There is a positive correlation between a movie's budget and its box office revenue, indicating that higher-budget films generally earn more. However, the variability within this trend highlights the inherent risks and the potential for lower-budget films to achieve substantial success if they resonate well with audiences.
+Movies with lower budgets (less than $100M) dominate the High Success category, often achieving impressive ROI due to their smaller initial investments. Moderate-budget films ($150M–$300M) tend to break even or turn modest profits but rarely deliver exceptional ROI, as illustrated by titles like Ant-Man and the Wasp: Quantumania. High-budget films come with greater financial risk, though some notable exceptions, such as Avatar and Avengers: Endgame, manage to achieve both high revenue and strong ROI. Additionally, films like Joker highlight the potential for low-budget projects to generate significant financial success when paired with compelling storytelling and effective marketing strategies.
 
 **Recommendations for producers**
 
@@ -109,7 +112,7 @@ There is a positive correlation between a movie's budget and its box office reve
 
 •	Prioritize producing movies in Adventure, Action, Animation, Comedy, and Drama genres, as these have consistently generated high box office returns. Collaborate with top-performing directors within these genres to leverage their successful track records.
 
-•	Investing heavily in a movie's budget can significantly boost its box office potential. However, historical data shows that higher budgets don't always guarantee success, as other factors like marketing and audience reception also play crucial roles. 
+•	To maximize profitability, producers and investors should prioritize low-to-mid-budget films, as these consistently deliver strong returns. High-budget projects should be approached with caution and focus on established franchises or concepts with proven audience appeal to reduce financial risk. For smaller-budget films, leveraging creative storytelling and innovative marketing can lead to standout successes with exceptional profitability.
 
 
 ## Next steps
