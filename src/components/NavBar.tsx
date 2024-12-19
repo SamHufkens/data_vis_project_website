@@ -17,7 +17,7 @@ const NavBar = () => {
               <a href="#vis1" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0">Visualizations</a>
             </li>
             <li>
-              <a href="https://www.kaggle.com/datasets/alanvourch/tmdb-movies-daily-updates" className='bg-primary hover:bg-blue-500 transition text-white rounded px-3 py-2 flex items-center gap-2'>
+              <a href="https://drive.google.com/file/d/1z2OimV4BUOVgUstVIv-T31JrIdXxCjPJ/view?usp=sharing" className='bg-primary hover:bg-blue-500 transition text-white rounded px-3 py-2 flex items-center gap-2'>
                 <FaDownload size={15}/>
                 Dataset
               </a>
