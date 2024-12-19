@@ -19,16 +19,21 @@ function ProtocolPage3() {
           <TitleSection title="Protocol for 'Director-Actor Collaboration'"/>
           <div>
             <p className="font-semibold">Timestamp</p>
-            <p>1920-2020</p>
+            <p>200-2023</p>
           </div>
           <div>
             <p className="font-semibold">Data source</p>
             <ul className="list-disc list-inside ml-4">
               <li>
                 <a href="https://www.kaggle.com/datasets/alanvourch/tmdb-movies-daily-updates">
-                  TMDB Movies Dataset
+                  TMDB Movies Dataset (kaggle)
                 </a>
               </li>
+              <li>
+                  <a href="https://drive.google.com/file/d/1z2OimV4BUOVgUstVIv-T31JrIdXxCjPJ/view?usp=sharing">
+                    Preprocessed Dataset
+                  </a>
+                </li>
             </ul>
           </div>
           <div>
