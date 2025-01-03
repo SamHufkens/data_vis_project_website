@@ -7,7 +7,7 @@ Teacher Giovanni Profeta
 Authors: Sam Hufkens, Kadir Özden, Jorge Garcia, Ilyas Qasemzada
 
 [Analyzing Factors Influencing
-the Box Office of a Movie](https://github.com/SamHufkens/data_vis_project_website)
+the Box Office of a Movie](https://datavismoviesproject.netlify.app/)
 
 
 ## Abstract
@@ -71,23 +71,23 @@ df = df[df['runtime'] != 0.0]
 ### The Evolution of the Box Office from 2000 to 2023 
 To illustrate the evolution of the box office over time, we used a line graph and show the total box office for each year, as it effectively highlights trends. We added annotations to emphasize significant events between 2000 and 2023. Additionally, we included a prefix in the labels to clarify that the values represent monetary amounts, specifically in US dollars.
 
-![alt text](public/assets/evolution.png)
+![Evolution Visualization](public/assets/evolution.png)
 
 ### Influence of Key Genres and Directors
 We also wanted to analyze which genre is the most popular and identify the most prominent directors within each genre. To visualize this, we created a treemap. Each genre was assigned a distinct color, which can be consistently applied across other visualizations. The size of the boxes in the treemap represents the influence of each genre and director, making it easy to compare their popularity and impact.
 
-![alt text](public/assets/genres_and_directors.png)
+![Genres and Directors Visualization](public/assets/genres_and_directors.png)
 
 ### Best Month to Release a Movie
 Another important factor to consider is identifying the best month to release a movie and determining which genres perform the best during that time. To explore this, we created a new variable called "month" based on the release date. Different colors were used to represent genres, ensuring consistency by using the same color scheme as in the previous visualization. We had many unique genres, but some contributed very little to the overall analysis. To simplify the visualization, we grouped these less impactful genres under the "Other" category.
 
-![alt text](public/assets/best_month.png)
+![Best Month Visualization](public/assets/best_month.png)
 
 ### Budget vs Box Office
 
 We wanted to see if a movie’s budget affects its box office performance, so we created a scatter plot to show the relationship. To make it easier to see the data, we reduced the number of points and made them more transparent. We also labeled a few key movies to make the plot more informative.
 
-![alt text](public/assets/budget_vs_gross.png)
+![Budget vs Box Office Visualization](public/assets/budget_vs_gross.png)
 
 ## Key findings
 **Evolution from 2000 to 2023**
