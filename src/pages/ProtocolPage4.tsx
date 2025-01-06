@@ -45,8 +45,9 @@ function ProtocolPage4() {
                 <li>4. Selected movies between the years 2000 and 2023 (included)</li>
                 <li>5. Dropped rows where runtime is 0.0</li>
                 <li>6. Dropped rows where budget is 0.0</li>
-                <li>7. Calculated the ROI and stored in a new column</li>
-                <li>8. Made a new column 'Success category' based on the ROI</li>
+                <li>7. Scaled revenue with 1,000,000</li>
+                <li>8. Calculated the ROI and stored in a new column</li>
+                <li>9. Made a new column 'Success category' based on the ROI</li>
             </ol>
           </div>
          

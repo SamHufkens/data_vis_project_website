@@ -45,8 +45,9 @@ function ProtocolPage3() {
                 <li>4. Selected movies between the years 2000 and 2023 (included)</li>
                 <li>5. Dropped rows where runtime is 0.0</li>
                 <li>6. Dropped rows where budget is 0.0</li>
-                <li>7. Added a new column 'month'</li>
-                <li>8. Grouped by month and revenue and then averaged the box office for each month</li>
+                <li>7. Scaled revenue with 1,000,000</li>
+                <li>8. Added a new column 'month'</li>
+                <li>9. Grouped by month and revenue and then averaged the box office for each month</li>
             </ol>
           </div>
          

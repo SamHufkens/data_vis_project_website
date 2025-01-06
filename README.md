@@ -34,7 +34,7 @@ We used the TMDB Movies dataset from kaggle, this dataset contains 28 variables.
 [Main datasource](https://www.kaggle.com/datasets/alanvourch/tmdb-movies-daily-updates)
 
 ## Data pre-processing
-We preprocessed our data with python using the pandas library. The first thing we did was selecting the necessary variables and handling missing data. The genre column had different genres for every row, so we took the first most important genre, so we would be able to visualize it better. We also removed rows where the runtime of the was 0.0. At last we filtered the data to only have the movies with a release year between 2000 and 2023 (included), we did this because more recent movies are more important for our target audience. We ended up with 39189 records and with the following variables: title, runtime, vote_average, vote_count, release_date, budget, popularity, director, cast, revenue, Genre and release_year.
+We preprocessed our data with python using the pandas library. The first thing we did was selecting the necessary variables and handling missing data. The genre column had different genres for every row, so we took the first most important genre, so we would be able to visualize it better. We also removed rows where the runtime of the was 0.0 and the budget 0.0. At last we filtered the data to only have the movies with a release year between 2000 and 2023 (included), we did this because more recent movies are more important for our target audience. We ended up with 39189 records and with the following variables: title, runtime, vote_average, vote_count, release_date, budget, popularity, director, cast, revenue, Genre and release_year.
 
 
 ```Python
